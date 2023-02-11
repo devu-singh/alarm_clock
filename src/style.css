@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    text-align: center;
+}
+/* title  */
+#page_title{
+    align-items: center;
+    background-color:white;
+    text-align: center;
+    color: burlywood;
+}
+/* alarm main page */
+  
+.main-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color:whitesmoke;
+    display: flex;
+}
+#clock-container{
+    border: 2px solid black;
+    border-radius: 50px;
+    min-height: 50vh;
+    width: 50vh;
+    display: flex;
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+/* current time style */
+
+.current-time{
+    font-size: 30px;
+    color: black;
+}
+.mb{
+    margin-bottom: 1rem;
+}
+
+/* alarm form */
+
+select{
+    appearance: none;
+    outline: black;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.1rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #345c8a;
+    border: 2px solid;
+    border-color: black;
+}
+.alarm-form{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+/* button */
+
+.btn{
+    outline: none;
+    border: none;
+    background-color: wheat;
+    cursor: pointer;
+    padding: 0.6rem;
+}
+.submit-btn{
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.set-alarm-container{
+    width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.alarm{
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 0.5rem 1rem
+}
+.alarm .delete-alarm{
+    border-radius: 2rem;
+    background-color: black;
+    font-weight: bold;
+    color: wheat;
+    font-size:xx-medium;
+}
+.time {
+    color: #0E141B;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
